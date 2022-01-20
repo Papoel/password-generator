@@ -1,5 +1,37 @@
 {% extends "layouts/base.html.twig" %}
 
 {% block body %}
-    <h1>Home</h1>
+    <h1>Password Generator</h1>
+
+    <form action="">
+        <div class="">
+            <label for="length">Length</label>
+            <select name="" id="length">
+                {% for i in 8..60 %}
+                    <option value={{ i }}>{{ i }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="">
+            <label for="uppercase_letters">Uppercase Letters</label>
+            <input type="checkbox" id="uppercase_letters">
+        </div>
+
+        <div class="">
+            <label for="characters_specials">Characters Specials</label>
+            <input type="checkbox" id="characters_specials">
+        </div>
+
+        <div class="">
+            <label for="numbers">Numbers</label>
+            <input type="checkbox" id="numbers">
+        </div>
+
+    </form>
+
+    <footer>
+        <p>Fait avec <span>&hearts;</span> par <strong>Papoel</strong></p>
+        <p>{{ "now"|date("Y")  }} | Tous droits réservés.</p>
+    </footer>
 {% endblock %}
