@@ -112,3 +112,8 @@ atlassian-ide-plugin.xml
 .idea/password-generator.iml
 .idea/php.xml
 
+
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###

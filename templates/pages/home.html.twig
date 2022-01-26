@@ -3,14 +3,14 @@
 {% block body %}
     <h1>Password Generator</h1>
 
-    <form method="get">
+    <form method="get" action="{{ path('app_generate_password') }}">
         <div class="">
             <label for="length">Length</label>
-            <select name="" id="length">
-                {% for i in 8..60 %}
+            <select name="length" id="length">
+                {% for i in 8..50 %}
                     <option
                         value="{{ i }}"
-                        {{ i== 12 ? 'selected' }}
+                        {{ i== 16 ? 'selected' }}
                     >
                         {{ i }}
                     </option>
@@ -29,8 +29,8 @@
         </div>
 
         <div class="">
-            <label for="numbers">Numbers</label>
-            <input type="checkbox" id="numbers" name="numbers">
+            <label for="digits">Digits</label>
+            <input type="checkbox" id="digits" name="digits">
         </div>
 
         <button type="submit">Generate Password</button>
