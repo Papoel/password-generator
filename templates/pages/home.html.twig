@@ -1,6 +1,10 @@
 {% extends "layouts/base.html.twig" %}
 
 {% block body %}
+    <header>
+        {% include ('layouts/partials/header.html.twig') %}
+    </header>
+
     <h1>Password Generator</h1>
 
     <form method="get" action="{{ path('app_generate_password') }}">

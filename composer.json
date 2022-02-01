@@ -18,7 +18,8 @@
         "symfony/yaml": "6.0.*"
     },
     "require-dev": {
-        "symfony/maker-bundle": "^1.36"
+        "symfony/maker-bundle": "^1.36",
+        "symfony/var-dumper": "6.0.*"
     },
     "config": {
         "allow-plugins": {
